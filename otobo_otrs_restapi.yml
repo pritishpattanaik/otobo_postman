@@ -1,0 +1,80 @@
+---
+Debugger:
+  DebugThreshold: debug
+  TestMode: '0'
+Description: Ticket Connector REST Sample
+FrameworkVersion: 10.0.12
+Provider:
+  Operation:
+    GetToken:
+      Description: Creates a Token
+      MappingInbound: {}
+      MappingOutbound: {}
+      Type: Session::SessionCreate
+    QueueGet:
+      Description: To get Queue List
+      IncludeTicketData: '0'
+      Type: Queue::QueueGet
+    TicketCreate:
+      Description: Creates a Ticket
+      IncludeTicketData: '0'
+      Type: Ticket::TicketCreate
+    TicketGet:
+      Description: Retrieves Ticket data
+      MappingInbound: {}
+      MappingOutbound: {}
+      Type: Ticket::TicketGet
+    TicketGetList:
+      Description: Retrieves Ticket data for a List of Ticket IDs
+      IncludeTicketData: '0'
+      Type: Ticket::TicketGet
+    TicketSearch:
+      Description: Search for Tickets
+      MappingInbound: {}
+      MappingOutbound: {}
+      Type: Ticket::TicketSearch
+    TicketUpdate:
+      Description: Updates a Ticket
+      MappingInbound: {}
+      MappingOutbound: {}
+      Type: Ticket::TicketUpdate
+  Transport:
+    Config:
+      AdditionalHeaders: ~
+      KeepAlive: '1'
+      MaxLength: '100000000'
+      RouteOperationMapping:
+        GetToken:
+          RequestMethod:
+          - GET
+          Route: /Session/GetToken
+        QueueGet:
+          RequestMethod:
+          - GET
+          Route: /Queue
+        TicketCreate:
+          RequestMethod:
+          - GET
+          - POST
+          Route: /Ticket/TicketCreate
+        TicketGet:
+          RequestMethod:
+          - GET
+          Route: /Ticket/:TicketID
+        TicketGetList:
+          RequestMethod:
+          - GET
+          Route: /Ticket
+        TicketSearch:
+          RequestMethod:
+          - POST
+          Route: /Ticket/TicketSearch
+        TicketUpdate:
+          RequestMethod:
+          - PATCH
+          Route: /Ticket/:TicketID
+    Type: HTTP::REST
+RemoteSystem: ''
+Requester:
+  Transport:
+    Type: ''
