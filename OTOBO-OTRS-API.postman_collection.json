@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "1d270151-9686-4dab-b4e6-642206284d30",
+		"name": "OTOBO Rest API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11292801"
+	},
+	"item": [
+		{
+			"name": "OTOBOGetToken",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "OTOBOGetTicket",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "OTOBONewTicket",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "OTOBOSearchTicket",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
