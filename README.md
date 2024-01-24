@@ -1,6 +1,6 @@
 # What is OTOBO?
 
-######  OTOBO is an extremely flexible, web-based open-source ticketing tool, used to streamline communication in service organisations such as IT Help-desks, Customer Service, Call Centres etc. It provides classical ticketing functionality, a knowledge base/FAQs with internal and external interface, helps to automate processes and can be extended by an ITSM component with a CMDB to keep track of IT components – or buildings, office plants, cars etc. OTOBO is a fork based on ((OTRS)) Community Edition, started in 2019 to go back to the roots and offer a 100 % free tool, rooted in a strong community, and backed up by professional business services.
+###  OTOBO is an extremely flexible, web-based open-source ticketing tool, used to streamline communication in service organisations such as IT Help-desks, Customer Service, Call Centres etc. It provides classical ticketing functionality, a knowledge base/FAQs with internal and external interface, helps to automate processes and can be extended by an ITSM component with a CMDB to keep track of IT components – or buildings, office plants, cars etc. OTOBO is a fork based on ((OTRS)) Community Edition, started in 2019 to go back to the roots and offer a 100 % free tool, rooted in a strong community, and backed up by professional business services.
 
 
 # OTOBO Postman Collection API example request
